@@ -1,0 +1,200 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    /* border: 0.1px solid red; */
+    box-sizing: border-box;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+
+body{
+    width: 60vw;
+    margin: auto;
+    background: rgb(0, 0, 0);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0 20px 0;
+    margin-bottom: 30px;
+}
+
+header > img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    color: red;
+    margin-bottom: 30px;
+}
+
+header > h1{
+    text-transform: uppercase;
+}
+
+header > p{
+    color: red;
+    width: 60%;
+    line-height: 25px;
+}
+
+header > p{
+    text-align: center;
+}
+
+header > button{
+    background: black;
+    padding: 15px;
+    border-radius: 15px;
+    /* border: 1px solid white; */
+    box-shadow: 2px 2px 3px 1px grey;
+    transition: all 0.5s ease-in-out;
+}
+
+header > button:hover{
+    border: 2px solid red;
+    box-shadow: 2px 2px 3px 1px rgb(252, 47, 47);
+    background: rgb(255, 255, 255);
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+marquee > span{
+    color: red;
+    font-weight: bolder;
+}
+
+.marque_ani_1{
+    animation-name: marquee_ani;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+.marque_ani_1_emoji{
+    animation-name: marquee_ani;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+
+@keyframes marquee_ani {
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.marque_ani_2{
+    animation-name: marquee_ani2;
+    animation-duration: 10s;
+    animation-delay: 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+.marque_ani_2_emoji{
+    animation-name: marquee_ani;
+    animation-duration: 10s;
+    animation-delay: 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+@keyframes marquee_ani2 {
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.highlight{
+    font-weight: bolder;
+}
+
+hr{
+    margin: 50px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.showcase_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.case_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 33%;
+    
+}
+
+.case_container > img{
+    width: 100%;
+    height: 30vh;
+}
+
+.skillset_container{
+    display: flex;
+    gap: 20px;
+    padding: 30px 0px 20px 0px;
+}
+
+.skillset_container > p{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 13px;
+}
+
+.set_container{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.set_sub_container{
+    box-shadow: 0px 0px 2px 1px white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.contact_container{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-top: 10px;
+}
